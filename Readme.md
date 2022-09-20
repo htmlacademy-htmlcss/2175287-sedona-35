@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Anastasia Shchepkina](https://up.htmlacademy.ru/htmlcss/35/user/2175287).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Ворожцов] (https://htmlacademy.ru/profile/id485797).
 
 ---
 
