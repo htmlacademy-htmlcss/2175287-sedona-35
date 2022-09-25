@@ -39,19 +39,84 @@
     </header>
 
     <main class="main-inner">
-      <header class="inner-header">
+      <section class="catalog">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link visually-hidden" href="index.html">Главная
-              <img src="#" alt="Главная" class="breadcrumbs-icon">
+              <img src="#" alt="Home" class="breadcrumbs-icon">
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
+            <a href="/catalog.html" class="breadcrumbs-link">Каталог</a>
           </li>
         </ul>
-      </header>
+
+        <h3 class="search-item">Инфраструктура:</h3>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title visually-hidden">Инфраструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="swimming-pool" checked>
+              Бассейн
+            </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Parking" checked>
+                Парковка
+              </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Wi-Fi">
+                  Wi-Fi
+                </label>
+                </li>
+          </fieldset>
+
+          <h3 class="search-item">Тип жилья:</h3>
+          <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title visually-hiddden">Тип жилья:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="Hotel" checked>
+                Гостиница
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="Motel">
+                Мотель
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="Apartment">
+                Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <h3 class="search-item">Стоимость, ₽:</h3>
+        <fieldset class="filter-value">
+        <legend class="catalog-filter-title visually-hiddden">Стоимость:</legend>
+          <input type="number" class="value" min="0" max="9000" placeholder="от">
+          <input type="number" class="value" min="0" max="9000" placeholder="до">
+          <input type="range" class="range-value">
+       </fieldset>
+
+          <button class="button" type="submit">Применить</button>
+          <button class="button" type="reset">Сбросить</button>
+        </form>
+      </section>
+
+
+
     </main>
 
     <footer class="page-footer">
@@ -73,7 +138,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer-contacts-phone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+        <a class="footer-contacts-phone" href="8128121212">+7 (812) 812-12-12</a>
         <a class="fotter-logo">
           <img src="#" alt="logo HTML academy" class="logo-HTML-academy">
         </a>
