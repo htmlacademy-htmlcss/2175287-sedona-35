@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="navigation">
         <a href="index.html" class="navigation-logo">
-        <img class="page-header-logo" src="#" alt="Логотип Седоны">
+          <img class="page-header-logo" src="#" alt="Логотип Седоны">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -21,7 +21,6 @@
             <a href="/catalog.html" class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
-
         <ul class="navigation-user">
           <li class="navigation-item">
             <a href="#" class="navigation-link">
@@ -55,7 +54,6 @@
           </li>
         </ul>
         <h2 class="visually-hidden">Сортировка</h2>
-        <h3 class="search-item">Инфраструктура:</h3>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title visually-hidden">Инфраструктура:</legend>
@@ -80,8 +78,6 @@
                 </li>
               </ul>
           </fieldset>
-
-          <h3 class="search-item">Тип жилья:</h3>
           <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title visually-hiddden">Тип жилья:</legend>
           <ul class="catalog-filter-list">
@@ -105,12 +101,11 @@
             </li>
           </ul>
         </fieldset>
-
         <fieldset class="filter-value">
-        <legend class="catalog-filter-title visually-hiddden">Стоимость:</legend>
-          <input class="value" type="number" min="0" max="9000" placeholder="от">
-          <input class="value" type="number" min="0" max="9000" placeholder="до">
-          <input class="range-value" type="range">
+        <legend class="catalog-filter-title visually-hiddden" name="">Стоимость:</legend>
+          <input class="value" type="number" id="" min="0" max="9000" placeholder="от">
+          <input class="value" type="number" id="" min="0" max="9000" placeholder="до">
+          <input class="range-value" id="" type="range">
        </fieldset>
 
           <button class="button blue-button" type="submit">Применить</button>
@@ -146,11 +141,11 @@
             <p class="hotel-card-button hotel-card-type">Гостиница</p>
             <p class="hotel-card-button hotel-card-price">От 4000 ₽</p>
             <a class="hotel-card-button button brown-button" href="#">Подробнее</a>
-            <a class="hotel-card-button button blue-button" href="#">Избранное</a>
+            <button class="hotel-card-button button blue-button" href="#">Избранное</button>
             <a class="hotel-raiting-stars" href="#">
               <img class="raiting-star four-stars" src="#" alt="rating">
             </a>
-            <a class="hotel-card-button button noneactive-button" href="#">Рейтинг: 8,5</a>
+            <span>Рейтинг: 8,5</span>
           </li>
 
           <li class="hotel-card">
@@ -161,11 +156,11 @@
             <p class="hotel-card-button hotel-card-type">Гостиница</p>
             <p class="hotel-card-button hotel-card-price">От 5000 ₽</p>
             <a class="hotel-card-button button brown-button" href="#">Подробнее</a>
-            <a class="hotel-card-button button blue-button" href="#">Избранное</a>
+            <button class="hotel-card-button button blue-button" href="#">Избранное</button>
             <a class="hotel-raiting-stars" href="#">
               <img class="raiting-star four-stars" src="#" alt="rating">
             </a>
-            <a class="hotel-card-button button noneactive-button" href="#">Рейтинг: 8,5</a>
+            <span>Рейтинг: 8,5</span>
           </li>
 
           <li class="hotel-card">
@@ -176,11 +171,11 @@
             <p class="hotel-card-button hotel-card-type">Гостиница</p>
             <p class="hotel-card-button hotel-card-price">От 2500 ₽</p>
             <a class="hotel-card-button button brown-button" href="#">Подробнее</a>
-            <a class="hotel-card-button button blue-button" href="#">Избранное</a>
+            <button class="hotel-card-button button blue-button" href="#">Избранное</button>
             <a class="hotel-raiting-stars" href="#">
               <img class="raiting-star three-stars" src="#" alt="rating">
             </a>
-            <a class="hotel-card-button button noneactive-button" href="#">Рейтинг: 6,9</a>
+            <span>Рейтинг: 6,9</span>
           </li>
 
           <li class="hotel-card">
@@ -191,11 +186,11 @@
             <p class="hotel-card-button hotel-card-type">Гостиница</p>
             <p class="hotel-card-button hotel-card-price">От 1500 ₽</p>
             <a class="hotel-card-button button brown-button" href="#">Подробнее</a>
-            <a class="hotel-card-button button blue-button" href="#">Избранное</a>
+            <button class="hotel-card-button button blue-button" href="#">Избранное</button>
             <a class="hotel-raiting-stars" href="#">
               <img class="raiting-star two-stars" src="#" alt="rating">
             </a>
-            <a class="hotel-card-button button noneactive-button" href="#">Рейтинг: 5,0</a>
+            <span>Рейтинг: 5,0</span>
           </li>
         </ul>
 
@@ -213,7 +208,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-transparant" href="#">...</a>
+            <span>...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
