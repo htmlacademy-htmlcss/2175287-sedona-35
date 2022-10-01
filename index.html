@@ -7,50 +7,55 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <img class="page-header-logo" src="#" alt="Логотип Седоны">
+        <img class="page-header-logo" src="/icons/icons-logo/brand=sedona.svg" alt="Логотип Седоны">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="/index.html" >Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="/about.html">О Cедоне</a>
+            <a class="navigation-link" href="#">О Cедоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link href="/catalog.html"">Гостиницы</a>
+            <a class="navigation-link" href="/catalog.html">Гостиницы</a>
           </li>
         </ul>
-
         <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span></a>
+              <span class="visually-hidden">Поиск</span>
+              <img class="user-menu" src="/icons/icons/search.svg">
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span></a>
+              <span class="visually-hidden">Избранное</span>
+              <span class="amount-fav">12</span>
+              <img class="user-menu" src="/icons/icons/heart.svg">
+            </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <button class="button brown-button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
     </header>
-
     <main class="main-index">
       <section class="hero">
         <h1 class="visually-hidden">Hero Banner</h1>
-        <img class="hero" src="#" alt="hero-banner">
+        <img class="hero" src="/photo/Hero-banner-Sedona.jpg" width="1200" height="485" alt="hero-banner">
+        <img class="hero-slogan" src="/hero/welcome-hero.svg">
+      </section>
+      <section class="slogan">
         <p class="headline-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-
       <section>
         <h2 class="visually-hiddden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item blue">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="#" alt="Виды Седоны" class="foto">
+            <img class="foto" src="/photo/photo-true-town.jpg" alt="Виды Седоны" width="800" height="384">
           </li>
           <li class="advantages-item whiteblue">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -65,69 +70,66 @@
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item blue">
-            <img class="foto" src="#" alt="Мост Дьявола">
+            <img class="foto" src="/photo/photo-devil-gate.jpg" alt="Мост Дьявола" width="800" height="384">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
           <li class="advantages-item lightblue">
-            <img class="icon" src="#" alt="Дом">
+            <img class="icon" src="/icons/icons-feature/variant=housing.svg" alt="Дом" width="75" height="72">
             <h3 class="advantages-title">Жильё</h3>
             <p class="">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advantages-item whiteblue">
-            <img class="icon" src="#" alt="Еда">
+            <img class="icon" src="/icons/icons-feature/variant=eating.svg" alt="Еда" width="74" height="70">
             <h3 class="advantages-title">Еда</h3>
             <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages-item lightblue">
-            <img class="icon" src="#" alt="Сувенир">
+            <img class="icon" src="/icons/icons-feature/variant=souvenir.svg" alt="Сувенир" width="64" height="76">
             <h3 class="advantages-title">Сувениры</h3>
             <p>Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
-
       <section class="start-search">
         <h2 class="visually-hidden">Поиск</h2>
         <p class="headline-text">Заинтересовались?</p>
         <p class="text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button" href="#">Поиск гостиницы в Седоне</a>
+        <button class="button">Поиск гостиницы в Седоне</button>
       </section>
-
       <section class="subscribe">
-        <h2 class="visually-hidden">Подписка</h2>
-        <p class="headline-text">Подпишитесь на рассылку</p>
-        <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe" action="https://echo.htmlacademy.ru/">
-          <input class="field" type="email" placeholder="Ваш e-mail">
-          <input class="button" type="submit" value="Подписаться">
-        </form>
+          <img class="photo-footer" src="/photo/photo-subscribe.png">
+          <h2 class="visually-hidden">Подписка</h2>
+          <p class="headline-text">Подпишитесь на рассылку</p>
+          <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe" action="https://echo.htmlacademy.ru/">
+            <input class="field" type="email" placeholder="Ваш e-mail">
+            <input class="button" type="submit" value="Подписаться">
+          </form>
       </section>
     </main>
-
     <footer class="page-footer">
-        <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="social-media-list">
-            <li class="social-media-item">
-              <a class="social-media-logo" href="https://vk.com/htmlacademy">
-                <img class="social-media-logo" src="#" alt="VK" class="social-media-logo">
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a class="social-media-logo" href="https://t.me/htmlacademy">
-                <img class="social-media-logo" src="#" alt="Telegram">
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a class="social-media-logo" href="https://www.youtube.com/user/htmlacademyru">
-                <img class="social-media-logo" src="#" alt="Youtube">
-              </a>
-            </li>
-          </ul>
-          <a class="footer-contacts-phone" href="8128121212">+7 (812) 812-12-12</a>
-          <a class="fotter-logo">
-            <img class="logo-HTML-academy" src="#" alt="logo HTML academy">
+      <ul class="social-media-list">
+        <li class="social-media-item">
+          <a class="social-media-logo" href="https://vk.com/htmlacademy">
+            <img class="social-media-logo" src="/icons/icons-social/Social=Vk, State=State4.svg" alt="VK" class="social-media-logo">
           </a>
+        </li>
+        <li class="social-media-item">
+          <a class="social-media-logo" href="https://t.me/htmlacademy">
+            <img class="social-media-logo" src="/icons/icons-social/Social=Telegram, State=State5.svg" alt="Telegram">
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a class="social-media-logo" href="https://www.youtube.com/user/htmlacademyru">
+            <img class="social-media-logo" src="/icons/icons-social/Social=Youtube, State=State6.svg" alt="Youtube">
+          </a>
+        </li>
+      </ul>
+      <a class="footer-contacts-phone" href="8128121212">+7 (812) 812-12-12</a>
+      <a class="fotter-logo" href="https://htmlacademy.ru/">
+        <img class="logo-HTML-academy" src="/icons/icons-logo/brand=htmlacademy.svg" alt="logo HTML academy">
+      </a>
     </footer>
   </body>
 </html>
