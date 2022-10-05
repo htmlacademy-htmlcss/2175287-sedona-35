@@ -16,6 +16,76 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
+  margin: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+
+}
+
+.navigation-list,
+.navigation-user,
+.advantages-list,
+.social-media-list,
+.breadcrumbs,
+.catalog-filter-list,
+.hotel-list,
+.pagination {
+  list-style: none;
+  padding: 0;
+}
+
+.main-index {
+  background-image: url("../hero/hero-banner-sedona.jpg");
+  background-size: 1200px 485px;
+  background-repeat: no-repeat;
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+.headline-text {
+  Font-style: Bold;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+}
+
+.text {
+  font-style: normal;
+  Font-size: 22px;
+  line-height: 26px;
+  color: black;
+  text-align: center;
+}
+
+.button {
+
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.subscribe {
+  background-image: url("/main-page/photo-subscribe.jpg")
+
 }
