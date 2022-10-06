@@ -41,25 +41,22 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-catalog">
       <section class="catalog">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <h1 class="catalog-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link visually-hidden" href="index.html">Главная
-            </a>
+            <a class="breadcrumbs-link" href="index.html">
+              Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <img class="beadcrumbs-icon-path" src="icons/icons/breadcrumbs.svg" alt="path" width="8" height="20">
-          </li>
-          <li class="breadcrumbs-item">
-            <span>Гостиницы</span>
+            <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
         <h2 class="visually-hidden">Сортировка</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title visually-hidden">Инфраструктура:</legend>
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -82,7 +79,7 @@
               </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title visually-hiddden">Тип жилья:</legend>
+            <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -105,7 +102,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter-value">
-            <legend class="catalog-filter-title visually-hiddden" name="">Стоимость:</legend>
+            <legend class="catalog-filter-title" name="">Стоимость, ₽:</legend>
               <input class="value" type="number" id="" min="0" max="9000" placeholder="от" step="100">
               <input class="value" type="number" id="" min="0" max="9000" placeholder="до" step="100">
               <input class="range-value" id="" type="range">
@@ -116,20 +113,22 @@
       </section>
       <section class="catalog-hotels">
         <h2 class="searched-hotels">Найдено гостиниц: <span>38</span></h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
-        <a class="sort" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="sort" href="#">
-          <span class="visually-hidden">Показать карточку</span>
-        </a>
-        <a class="sort" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <div class="sorting-container">
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярное</option>
+            <option value="cheap">Сначала дешёвое</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+          <a class="button sort tile-mode" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="button sort slideshow-mode" href="#">
+            <span class="visually-hidden">Показать карточку</span>
+          </a>
+          <a class="button sort list-mode" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -143,7 +142,6 @@
               <img class="raiting-star four-stars" src="catalog/stars-rate.jpg" alt="rating">
             <span>Рейтинг: 8,5</span>
           </li>
-
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
               <img class="hotel-card-image" src="catalog/photo-card-hotel-2.jpg" alt="Фото отеля" width="300" height="212">
@@ -194,7 +192,7 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item pagination-disabled">
             <span>...</span>
           </li>
           <li class="pagination-item">
@@ -203,10 +201,10 @@
         </ul>
       </section>
       <section class="subscribe">
-        <h2 class="headline-text">Подпишитесь на рассылку</h2>
-        <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="catalog-subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="catalog-subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="subscribe-email">Email</label>
+          <label for="subscribe-email" class="visually-hidden">Email</label>
             <input class="field" type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
             <button class="button blue-button subscribe-button" type="submit">Подписаться</button>
         </form>
