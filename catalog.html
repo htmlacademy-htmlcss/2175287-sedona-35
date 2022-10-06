@@ -26,15 +26,18 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
+              <img class="user-menu" src="/icons/icons/search.svg">
             </a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">
-              <span class="visually-hidden">Избранное</span></a>
+              <span class="visually-hidden">Избранное</span>
+              <img class="user-menu" src="/icons/icons/heart.svg">
               <span class="amount-fav">12</span>
-              <li class="navigation-item">
-                <button class="button brown-button">Хочу сюда!</button>
-              </li>
+            </a>
+          <li class="navigation-item">
+            <button class="button brown-button">Хочу сюда!</button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -112,7 +115,7 @@
         </form>
       </section>
       <section class="catalog-hotels">
-        <h2>Найдено гостиниц: <span>38</span></h2>
+        <h2 class="searched-hotels">Найдено гостиниц: <span>38</span></h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
@@ -200,10 +203,9 @@
         </ul>
       </section>
       <section class="subscribe">
-        <h2 class="visually-hidden">Подписка</h2>
-        <p class="headline-text">Подпишитесь на рассылку</p>
+        <h2 class="headline-text">Подпишитесь на рассылку</h2>
         <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe" action="https://echo.htmlacademy.ru/" mathod="post">
+        <form class="subscribe" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscribe-email">Email</label>
             <input class="field" type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
             <button class="button blue-button subscribe-button" type="submit">Подписаться</button>
