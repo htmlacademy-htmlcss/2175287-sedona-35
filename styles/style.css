@@ -47,6 +47,11 @@ body {
   text-align: center;
 }
 
+.list {
+  list-style: none;
+  padding: 0;
+}
+
 .button {
   font-size: 16px;
   line-height: 20px;
@@ -56,6 +61,22 @@ body {
   background-color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 0;
+  border: none;
+}
+
+.navigation-button {
+  display: block;
+  width: 160px;
+  height: 36px;
+}
+
+.brown-button {
+  background-color: #756157;
+}
+
+.blue-button {
+  background-color: #82B3D3;
 }
 
 .catalog-header-title {
@@ -71,6 +92,8 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .subscribe-title {
@@ -82,11 +105,6 @@ body {
 
 .subscribe-text {
   color: #ffffff;
-}
-
-.text {
-  font-size: 22px;
-  line-height: 26px;
 }
 
 .main-header {
@@ -101,6 +119,11 @@ body {
   text-decoration: none;
 }
 
+.navigation {
+  display: flex;
+  height: 64px;
+}
+
 .navigation-link {
   text-decoration: none;
   color: #000000;
@@ -110,29 +133,18 @@ body {
   padding: 15px;
 }
 
-.navigation {
-  display: grid;
-  grid-template-columns: 140px 1fr 1fr;
-  column-gap: 30px;
-  align-items: center;
-}
-
 .navigation-list,
 .navigation-user {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .text {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 26px;
-  font-weight: 400;
-}
-
-.main-index {
-  background-color: #ffffff;
 }
 
 .main-index-hero {
@@ -140,7 +152,9 @@ body {
   background-image: url("../hero/hero-banner-sedona.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 80px;
+  margin: auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .advantages-title,
@@ -151,20 +165,32 @@ body {
   font-weight: 700;
 }
 
+.slogan {
+  width: 650px;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+
 .advantages-title {
   text-transform: uppercase;
 }
 
-.navigation-list,
-.navigation-user,
-.advantages-list,
-.social-media-list,
-.breadcrumbs,
-.catalog-filter-list,
-.hotel-list,
-.pagination {
-  list-style: none;
-  padding: 0;
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-card {
+  width: 400px;
+  height: 384px;
+}
+
+.searching {
+  width: 592px;
+  margin: auto;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .catalog {
@@ -218,6 +244,8 @@ body {
   background-repeat: no-repeat;
   width: 1200px;
   margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .catalog-filter {
@@ -246,13 +274,26 @@ body {
 }
 
 .page-footer{
-  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
 }
 
 .footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
-  font-weight: 400;
   text-decoration: none;
   background-color: #ffffff;
+  color: #000000;
+}
+
+.social-media-list {
+  display: flex;
+  width: 142px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
