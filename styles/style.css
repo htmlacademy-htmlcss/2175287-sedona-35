@@ -37,12 +37,12 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  flex-grow: 1;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px 0px;
 }
 
-/* .main-container {
+.main-container {
   flex-grow: 1;
-} */
+}
 
 .visually-hidden {
   position: absolute;
@@ -87,6 +87,12 @@ body {
   height: 52px;
   border: solid 2px #82B3D3;
 }
+
+.filter-button {
+  width: 191px;
+  height: 36px;
+}
+
 .input-field {
   width: 475px;
   height: 52px;
@@ -102,6 +108,31 @@ body {
 
 .green-button {
   background-color: #7DB54F;
+}
+
+.gray-button {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.transparent-button {
+  width: 191px;
+  height: 36px;
+  background-color: transparent;
+}
+
+.card-button {
+  width: 140px;
+  height: 36px;
+}
+
+.card-button-about {
+  padding: 8px 26px;
 }
 
 .catalog-header-title {
@@ -218,11 +249,11 @@ body {
   padding-bottom: 96px;
 }
 
-.main-catalog {
+.catalog-header-container {
   background-image: url("../catalog/photo-filter-catalog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: #82B3D3;
   margin: 0 auto;
 }
 
@@ -231,6 +262,12 @@ body {
   line-height: 21px;
   text-decoration: none;
   color: #ffffff;
+}
+
+.filter-content {
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .advantages-item {
@@ -258,12 +295,28 @@ body {
   background-color: #ffffff;
 }
 
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .hotel-card {
-  background-color: #ffffff;
+  width: 340px;
+  border: solid 1px #E6E6E6;
+  border-radius: 4px;
+}
+
+.hotel-card-information {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 .hotel-card-link {
   text-decoration: none;
+  color: #000000;
 }
 
 .subscribe {
@@ -276,7 +329,7 @@ body {
 }
 .subscribe-index {
   background-image: url("../main-page/photo-subscribe.jpg");
-  background-color: #ffffff;
+  background-color: #82B3D3;
 }
 
 .subscribe-text {
@@ -290,14 +343,21 @@ body {
   color: #ffffff;
 }
 
-.catalog-hotels {
+.catalog-hotels-container {
+  width: 1060px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin: 0 auto;
+}
+
+.sort-hotels {
   display: flex;
 }
 
-.pagination {
+.pagination-list {
   display: flex;
   align-items: center;
-  padding-left: 70px;
   background-color: #ffffff;
   margin: 0 auto;
 }
