@@ -88,14 +88,22 @@ body {
   border: solid 2px #82B3D3;
 }
 
+.search-button {
+  padding: 8px 50px;
+}
 .filter-button {
   width: 191px;
   height: 36px;
 }
 
+.main-header {
+  height: 64px;
+}
+
 .input-field {
   width: 475px;
   height: 52px;
+  box-sizing: border-box;
 }
 
 .brown-button {
@@ -133,9 +141,11 @@ body {
 
 .card-button-about {
   padding: 8px 26px;
+  box-sizing: border-box;
 }
 
 .catalog-header-title {
+  margin: 0;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
@@ -200,6 +210,23 @@ body {
   padding: 0;
 }
 
+.searching {
+  padding-bottom: 96px;
+}
+
+.search-title {
+  padding-top: 96px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.search-text {
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 54px;
+  box-sizing: border-box;
+}
+
 .main-index-hero {
   background-color: #ffffff;
   background-image: url("../hero/hero-banner-sedona.jpg");
@@ -224,13 +251,15 @@ body {
 }
 
 .slogan {
-  width: 650px;
+  width: 660px;
   margin: auto;
   padding-top: 70px;
   padding-bottom: 90px;
 }
 
 .advantages-title {
+  width: 175px;
+  margin: 0 auto;
   text-transform: uppercase;
 }
 
@@ -240,13 +269,6 @@ body {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
-}
-
-.searching {
-  width: 592px;
-  margin: auto;
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 
 .catalog-header-container {
@@ -277,6 +299,22 @@ body {
 .advantages-item-blue {
   background-color: #82B3D3;
   color: #ffffff;
+  width: 100%;
+  display: flex;
+}
+
+.advantages-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 85px;
+  box-sizing: border-box;
+}
+
+.advantages-description {
+  margin: 0 auto;
+  width: 230px;
 }
 
 .advantages-item-lightblue {
@@ -298,6 +336,7 @@ body {
 .hotel-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .hotel-card {
@@ -320,16 +359,14 @@ body {
 }
 
 .subscribe {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 1200px;
-  margin: 0 auto;
   padding-top: 96px;
   padding-bottom: 104px;
 }
 .subscribe-index {
   background-image: url("../main-page/photo-subscribe.jpg");
-  background-color: #82B3D3;
+  background-color: rgb(92, 60, 60);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .subscribe-text {
