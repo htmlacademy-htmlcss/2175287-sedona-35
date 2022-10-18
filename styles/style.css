@@ -74,6 +74,7 @@ body {
   text-transform: uppercase;
   padding: 0;
   border: none;
+  cursor: pointer;
 }
 
 .navigation-link {
@@ -97,6 +98,7 @@ body {
 .filter-button {
   width: 191px;
   height: 36px;
+  margin-bottom: 32px;
 }
 
 .input-field {
@@ -124,6 +126,7 @@ body {
 
 .filter-buttons {
   display: flex;
+  justify-content: end;
   flex-direction: column;
 }
 
@@ -131,6 +134,15 @@ body {
   width: 191px;
   height: 36px;
   background-color: transparent;
+}
+
+.sort-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  border: solid 2px #E5E5E5;
+  box-sizing: border-box;
+  ;
 }
 
 .card-button {
@@ -299,11 +311,9 @@ body {
 }
 
 .breadcrumbs {
-  width: 130px;
   display: flex;
-  justify-content: space-between;
   margin: 0;
-  padding-bottom: 40px;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -311,6 +321,13 @@ body {
   line-height: 21px;
   text-decoration: none;
   color: #ffffff;
+  display: block;
+  margin-right: 28px;
+}
+
+.breadcrumbs-icon {
+  color: #ffffff;
+
 }
 
 .filter-content {
@@ -370,16 +387,36 @@ body {
   background-color: #ffffff;
 }
 
-.sorting-container {
-  background-color: #ffffff;
-}
-
 .sorting-hotels {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 40px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.sorting-container .button {
+  width: 56px;
+  height: 44px;
+  background-color: #ffffff;
+}
+
+.select-control {
+  width: 292px;
+  height: 49px;
+  border-radius: 4px;
+}
+
+.sort-modes {
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+}
+
+.sort-icons {
+  padding: 15px 14px;
 }
 
 .hotel-list {
@@ -423,20 +460,49 @@ body {
   background-repeat: no-repeat;
 }
 
+.subscribe-title {
+  padding: 20px;
+}
+
 .subscribe-text {
   width: 475px;
   margin: auto;
   padding-bottom: 54px;
 }
 
-.catalog-filter-group,
-.filter-value {
+.catalog-filter-group {
   border: none;
+  margin: 0;
+  padding: 0 70px 0 0;
+}
+
+.filter-value {
+  padding-left: 70px;
+}
+
+
+.catalog-filter-title {
+  margin: 0;
+  padding: 0 0 32px 0;
+}
+
+.catalog-filter-list {
+  margin: 0;
+}
+
+.catalog-filter-item {
+  padding-bottom: 16px;
+}
+
+.catalog-filter-item:nth-child(3n) {
+  padding-bottom: 5px;
 }
 
 .catalog-filter {
   display: flex;
+  justify-content: space-between;
   color: #ffffff;
+  padding-bottom: 70px;
 }
 
 .catalog-hotels-container {
