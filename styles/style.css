@@ -59,7 +59,7 @@ body {
 }
 
 .list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
 }
 
@@ -74,12 +74,16 @@ body {
   text-transform: uppercase;
   padding: 0;
   border: none;
+  cursor: pointer;
 }
 
-.navigation-button {
+.navigation-link {
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
   display: block;
-  width: 160px;
-  height: 36px;
+  margin: 0;
+  padding: 20px 16px;
 }
 
 .subscribe-button {
@@ -94,10 +98,7 @@ body {
 .filter-button {
   width: 191px;
   height: 36px;
-}
-
-.main-header {
-  height: 64px;
+  margin-bottom: 32px;
 }
 
 .input-field {
@@ -125,6 +126,7 @@ body {
 
 .filter-buttons {
   display: flex;
+  justify-content: end;
   flex-direction: column;
 }
 
@@ -132,6 +134,15 @@ body {
   width: 191px;
   height: 36px;
   background-color: transparent;
+}
+
+.sort-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  border: solid 2px #E5E5E5;
+  box-sizing: border-box;
+  ;
 }
 
 .card-button {
@@ -149,6 +160,8 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
+  padding-top: 35px;
+  padding-bottom: 8px;
 }
 
 .searched-hotels,
@@ -159,20 +172,36 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 0;
 }
 
 .white-text {
   color: #ffffff;
 }
 
-.navigation-item,
+.navigation-link,
 .catalog-filter-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
 }
+
+.navigation-button {
+  font-size: 16px;
+  line-height: 20px;
+  width: 160px;
+  height: 36px;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  padding: 8px 34px;
+  color: #ffffff;
+  background-color: #756157;
+  text-transform: uppercase;
+  margin-top: 14px;
+}
+
 
 .navigation {
   display: flex;
@@ -181,26 +210,22 @@ body {
 }
 
 .navigation-list {
-  width: 340px;
+  width: 460px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
 }
 
 .navigation-user {
-  max-width: 270px;
+  max-width: 300px;
   margin-left: auto;
 }
 
-.navigation-link {
-  text-decoration: none;
-  color: #000000;
-  background-color: #ffffff;
-  display: block;
-  margin: 0;
-  padding: 0;
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
 }
 
 .text {
@@ -211,11 +236,11 @@ body {
 }
 
 .searching {
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 
 .search-title {
-  padding-top: 96px;
   padding-bottom: 20px;
   margin: 0 auto;
 }
@@ -228,7 +253,7 @@ body {
 }
 
 .main-index-hero {
-  background-color: #ffffff;
+  background-color: #756157;
   background-image: url("../hero/hero-banner-sedona.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -261,6 +286,12 @@ body {
   width: 175px;
   margin: 0 auto;
   text-transform: uppercase;
+  padding-bottom: 62px;
+}
+
+.advantages-title-more {
+  padding-top: 0;
+  padding-bottom: 30px;
 }
 
 .advantages-list {
@@ -279,11 +310,24 @@ body {
   margin: 0 auto;
 }
 
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
   color: #ffffff;
+  display: block;
+  margin-right: 28px;
+}
+
+.breadcrumbs-icon {
+  color: #ffffff;
+
 }
 
 .filter-content {
@@ -294,6 +338,7 @@ body {
 
 .advantages-item {
   width: 400px;
+  height: 384px;
 }
 
 .advantages-item-blue {
@@ -312,9 +357,22 @@ body {
   box-sizing: border-box;
 }
 
+.advantages-icon {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
 .advantages-description {
   margin: 0 auto;
   width: 230px;
+}
+
+.advantages-title-light {
+  padding-top: 103px;
+}
+
+.advantages-description-light {
+  padding-bottom: 121px;
 }
 
 .advantages-item-lightblue {
@@ -329,20 +387,53 @@ body {
   background-color: #ffffff;
 }
 
-.sorting-container {
+.sorting-hotels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  color: #000000;
   background-color: #ffffff;
+}
+
+.sorting-container .button {
+  width: 56px;
+  height: 44px;
+  background-color: #ffffff;
+}
+
+.select-control {
+  width: 292px;
+  height: 49px;
+  border-radius: 4px;
+}
+
+.sort-modes {
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+}
+
+.sort-icons {
+  padding: 15px 14px;
 }
 
 .hotel-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 60px;
 }
 
 .hotel-card {
   width: 340px;
   border: solid 1px #E6E6E6;
   border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .hotel-card-information {
@@ -364,9 +455,13 @@ body {
 }
 .subscribe-index {
   background-image: url("../main-page/photo-subscribe.jpg");
-  background-color: rgb(92, 60, 60);
+  background-color: #756157;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.subscribe-title {
+  padding: 20px;
 }
 
 .subscribe-text {
@@ -375,21 +470,52 @@ body {
   padding-bottom: 54px;
 }
 
+.catalog-filter-group {
+  border: none;
+  margin: 0;
+  padding: 0 70px 0 0;
+}
+
+.filter-value {
+  padding-left: 70px;
+}
+
+
+.catalog-filter-title {
+  margin: 0;
+  padding: 0 0 32px 0;
+}
+
+.catalog-filter-list {
+  margin: 0;
+}
+
+.catalog-filter-item {
+  padding-bottom: 16px;
+}
+
+.catalog-filter-item:nth-child(3n) {
+  padding-bottom: 5px;
+}
+
 .catalog-filter {
   display: flex;
+  justify-content: space-between;
   color: #ffffff;
+  padding-bottom: 70px;
 }
 
 .catalog-hotels-container {
   width: 1060px;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
   margin: 0 auto;
 }
 
 .sort-hotels {
   display: flex;
+}
+
+.pagination {
+  padding-bottom: 60px;
 }
 
 .pagination-list {
@@ -444,8 +570,21 @@ body {
 
 .social-media-list {
   display: flex;
-  width: 142px;
+  flex-wrap: wrap;
+  max-width: 160px;
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding: 0;
+}
+
+.social-media-item {
+  width: 48px;
+  height: 40px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.social-media-item:nth-child(3n) {
+  margin-right: 0;
 }

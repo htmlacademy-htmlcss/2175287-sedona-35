@@ -40,7 +40,7 @@
                 <span class="amount-fav">12</span>
               </a>
             <li class="navigation-item">
-              <a class="button navigation-button brown-button center">Хочу сюда!</a>
+              <a class="navigation-link navigation-button center">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -53,7 +53,10 @@
               <h1 class="catalog-header-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs list">
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="index.html">Главная</a>
+                  <a class="breadcrumbs-link" href="index.html">
+                    <span class="visually-hidden">Главная</span>
+                    <img class="breadcrumbs-icon" src="./icons/icons/home.svg" alt="Home" width="13" height="15">
+                  </a>
                 </li>
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link">Гостиницы</a>
@@ -110,7 +113,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="filter-value">
+                <fieldset class="catalog-filter-group filter-value">
                   <legend class="catalog-filter-title" name="">Стоимость, ₽:</legend>
                     <input class="value" type="number" id="" min="0" max="9000" placeholder="от" step="100">
                     <input class="value" type="number" id="" min="0" max="9000" placeholder="до" step="100">
@@ -128,23 +131,27 @@
         <section class="catalog-hotels-container">
           <div class="sorting-hotels">
             <h2 class="searched-hotels">Найдено гостиниц: <span>38</span></h2>
-          <div class="sorting-container">
-                <select class="select-control" aria-label="Сортировка">
-                  <option value="popular">Сначала популярное</option>
-                  <option value="cheap">Сначала дешёвое</option>
-                  <option value="expensive">Сначала дорогое</option>
-                </select>
+            <div class="sorting-container">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular">Сначала популярное</option>
+                <option value="cheap">Сначала дешёвое</option>
+                <option value="expensive">Сначала дорогое</option>
+              </select>
             </div>
-            <button class="visualy-hidden" type="submit">Отсортировать</button>
-            <a class="button sort tile-mode center" href="#">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a class="button sort slideshow-mode center" href="#">
-              <span class="visually-hidden">Показать карточку</span>
-            </a>
-            <a class="button sort list-mode center" href="#">
-              <span class="visually-hidden">Показать список</span>
-            </a>
+            <div class="sort-modes">
+              <a class="sort-button tile-mode center" href="#">
+                <span class="visually-hidden">Показать карточки</span>
+                <img class="sort-icons" src="./icons/icons-mode/variant-tile.svg" alt="tile" width="16" height="14">
+              </a>
+              <a class="sort-button slideshow-mode center" href="#">
+                <span class="visually-hidden">Показать карточку</span>
+                <img class="sort-icons" src="./icons/icons-mode/variant-slideshow.svg" alt="tile" width="16" height="14">
+              </a>
+              <a class="sort-button list-mode center" href="#">
+                <span class="visually-hidden">Показать список</span>
+                <img class="sort-icons" src="./icons/icons-mode/variant-list.svg" alt="tile" width="16" height="14">
+              </a>
+            </div>
           </div>
           <div class="catalog-hotels">
             <ul class="hotel-list list">
@@ -253,6 +260,7 @@
             </ul>
           </div>
         </section>
+
         <section class="subscribe center">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text text center">Только полезная информация и никакого спама, честное бойскаутское!</p>
