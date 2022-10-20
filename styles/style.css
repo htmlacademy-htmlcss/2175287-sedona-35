@@ -508,6 +508,9 @@ body {
   padding: 0 70px 0 0;
 }
 
+.filter-value {
+  padding-left: 70px;
+}
 
 .catalog-filter-title {
   margin: 0;
@@ -524,6 +527,32 @@ body {
 
 .catalog-filter-item:nth-child(3n) {
   padding-bottom: 5px;
+}
+
+.catalog-filter-value-wrapper {
+  display: grid;
+  grid-template-columns: 143px 143px;
+  gap: 36px 2px ;
+}
+
+.catalog-filter-value {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px;
+  border: none;
+  text-align: end;
+}
+
+.value-from {
+  border-radius: 4px 0 0 4px;
+}
+
+.value-end {
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-range-value {
+  grid-column: 1 / -1;
 }
 
 .catalog-filter {
