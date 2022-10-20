@@ -116,9 +116,11 @@
                 </fieldset>
                 <fieldset class="catalog-filter-group filter-value">
                   <legend class="catalog-filter-title" name="value">Стоимость, ₽:</legend>
-                    <input class="catalog-filter-value value-from" type="number" id="" min="0" max="9000" placeholder="от" step="100">
-                    <input class="catalog-filter-value value-end" type="number" id="" min="0" max="9000" placeholder="до" step="100">
-                    <input class="catalog-range-value" id="" type="range">
+                    <div class="catalog-filter-value-wrapper">
+                      <input class="catalog-filter-value value-from" type="number" id="" min="0" max="9000" placeholder="от" step="100">
+                      <input class="catalog-filter-value value-end" type="number" id="" min="0" max="9000" placeholder="до" step="100">
+                      <input class="catalog-range-value" id="" type="range">
+                    </div>
                 </fieldset>
                 <div class="filter-buttons">
                   <button class="button blue-button filter-button center" type="submit">Применить</button>
