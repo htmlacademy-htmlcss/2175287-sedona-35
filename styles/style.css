@@ -64,6 +64,7 @@ body {
 }
 
 .button {
+  display: inline;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -205,6 +206,10 @@ body {
   text-decoration: none;
 }
 
+.navigation-link-current {
+
+}
+
 .navigation-button {
   font-size: 16px;
   line-height: 20px;
@@ -239,6 +244,11 @@ body {
 .navigation-user {
   max-width: 300px;
   margin-left: auto;
+  justify-content: end;
+}
+
+.navigation-item-favorite {
+  margin-right: 20px;
 }
 
 .navigation-user .navigation-link {
@@ -420,16 +430,23 @@ body {
   background-color: #ffffff;
 }
 
-.sorting-container .button {
-  width: 56px;
-  height: 44px;
-  background-color: #ffffff;
+.sorting-container {
+  margin-left: auto;
 }
 
 .select-control {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  align-self: center;
+  line-break: auto;
   width: 292px;
   height: 49px;
   border-radius: 4px;
+  padding: 14px 20px;
+  appearance: none;
 }
 
 .sort-modes {
@@ -437,7 +454,7 @@ body {
   gap: 8px;
   flex-wrap: wrap;
   width: 160px;
-  margin: 0;
+  margin: 0 0 0 70px;
   padding: 0;
 }
 
@@ -540,7 +557,6 @@ body {
   line-height: 24px;
   padding: 12px 20px;
   border: none;
-  text-align: end;
 }
 
 .value-from {
@@ -638,4 +654,17 @@ body {
   height: 40px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.social-media-logo-vk {
+  padding: 13px 12px;
+}
+
+.social-media-logo-telegram {
+  padding: 12px 15px;
+}
+
+.social-media-logo-youtube {
+  padding: 12px 13px;
 }
