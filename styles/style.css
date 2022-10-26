@@ -126,12 +126,19 @@ body {
 }
 
 .sort-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   border-radius: 4px;
   border: solid 2px #E5E5E5;
   box-sizing: border-box;
   ;
+}
+
+.sort-button-current {
+  border: solid 2px #000000;
 }
 
 .card-button {
