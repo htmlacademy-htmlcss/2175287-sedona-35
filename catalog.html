@@ -27,16 +27,15 @@
           </ul>
           <ul class="navigation-list navigation-user list">
             <li class="navigation-item">
-              <a class="navigation-link center" href="#">
+              <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span>
-                <img class="user-menu" src="/icons/icons/search.svg">
+                <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m19.9 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" fill="#000"/></svg>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link center" href="#">
+            <li class="navigation-item navigation-item-favorite">
+              <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
-                <img class="user-menu" src="/icons/icons/heart.svg">
-                <span class="amount-fav">12</span>
+                <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.3 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.9 2c1.3 0 2.5.5 3.5 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6 6.9 6.3-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-1 .4l-.7-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/></svg>
               </a>
             <li class="navigation-item">
               <a class="navigation-link navigation-button center">Хочу сюда!</a>
@@ -54,7 +53,7 @@
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link" href="index.html">
                     <span class="visually-hidden">Главная</span>
-                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg aria-hidden="true" focusable="false" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.3928 3L4.39282 8.80006V15.0001H16.3928V8.80006L10.3928 3ZM15.3928 14.0001H5.39282V9.20005L10.3928 4.4L15.3928 9.20005V14.0001Z" fill="white"/>
                       <path d="M8.39282 13.0001H9.39282V10.5001H11.3928V13.0001H12.3928V9.50005H8.39282V13.0001Z" fill="white"/>
                   </a>
@@ -135,9 +134,9 @@
           <h2 class="searched-hotels">Найдено гостиниц: <span>38</span></h2>
           <div class="sorting-container">
             <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала популярное</option>
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap" selected>Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
             </select>
           </div>
           <div class="sort-modes">
@@ -250,24 +249,24 @@
       <footer class="page-footer">
         <ul class="social-media-list list">
           <li class="social-media-item">
-            <a class="social-media-logo" href="https://vk.com/htmlacademy">
-              <img class="social-media-logo" src="icons/icons-social/social-vk.svg" alt="VK">
+            <a class="social-media-logo-vk" href="https://vk.com/htmlacademy">
+              <svg aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.4 1c.2-.6 0-1-.7-1H20c-.6 0-1 .3-1.1.7 0 0-1.3 3.2-3.2 5.3-.7.6-1 .8-1.3.8-.1 0-.4-.2-.4-.7V.9c0-.6-.2-.9-.7-.9H9.2c-.5 0-.7.3-.7.6 0 .6 1 .8 1 2.5V7c0 .8-.1 1-.5 1-.9 0-3-3.2-4.3-6.9-.3-.7-.5-1-1.2-1H1C.1 0 0 .3 0 .7c0 .7.9 4.1 4.1 8.6 2.2 3 5.3 4.7 8 4.7 1.7 0 2-.4 2-1v-2.3c0-.8 0-.9.6-.9.4 0 1 .2 2.6 1.7 1.8 1.7 2.1 2.5 3.1 2.5H23c.8 0 1.2-.4 1-1.1-.3-.7-1.1-1.8-2.3-3L20 8c-.4-.5-.3-.7 0-1.1 0 0 3.2-4.4 3.5-6Z" fill="#83B3D3"/></svg>
             </a>
           </li>
           <li class="social-media-item">
-            <a class="social-media-logo" href="https://t.me/htmlacademy">
-              <img class="social-media-logo" src="icons/icons-social/social-telegram.svg" alt="Telegram">
+            <a class="social-media-logo-telegram" href="https://t.me/htmlacademy">
+              <svg aria-hidden="true" focusable="false" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8.1.8 6.2c-1 .5-1 1-.2 1.4l4.1 1.2 9.5-6c.5-.2.9 0 .5.2l-7.6 7-.3 4.2c.4 0 .6-.2.8-.4l2-2 4.1 3c.8.5 1.3.3 1.5-.6L18 1.4c.3-1.1-.4-1.6-1.1-1.3Z" fill="#83B3D3"/></svg>
             </a>
           </li>
           <li class="social-media-item">
-            <a class="social-media-logo" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="social-media-logo" src="icons/icons-social/social-youtube.svg" alt="Youtube">
+            <a class="social-media-logo-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <svg aria-hidden="true" focusable="false" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.6 0H3.2C1.3 0 0 1.6 0 3.4v10c0 2 1.3 3.6 3.2 3.6h15.6c1.7 0 3.2-1.6 3.2-3.4V3.4C21.8 1.6 20.5 0 18.6 0Zm-11 12.5v-8l7.4 4-7.3 4Z" fill="#83B3D3"/></svg>
             </a>
           </li>
         </ul>
-        <a class="footer-contacts-phone center" href="8128121212">+7 (812) 812-12-12</a>
+        <a class="footer-contacts-phone center" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="footer-logo" href="https://htmlacademy.ru/">
-          <img class="logo-HTML-academy" src="icons/icons-logo/brand-htmlacademy.svg" alt="logo HTML academy">
+          <img class="logo-HTML-academy" src="icons/icons-logo/brand-htmlacademy.svg" alt="logo HTML academy" width="115" height="33">
         </a>
       </footer>
     </div>
