@@ -64,6 +64,7 @@ body {
 }
 
 .button {
+  display: inline;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -77,16 +78,10 @@ body {
   cursor: pointer;
 }
 
-.navigation-link {
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
-  display: block;
-  margin: 0;
-  padding: 20px 16px;
-}
-
 .subscribe-button {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
   width: 232px;
   height: 52px;
   font-size: 20px;
@@ -97,23 +92,13 @@ body {
 .search-button {
   font-size: 20px;
   line-height: 36px;
-  padding: 8px 50px;
+  padding: 13px 50px;
 }
+
 .filter-button {
   width: 191px;
   height: 36px;
   margin-bottom: 32px;
-}
-
-.input-field {
-  font-size: 18px;
-  padding-left: 20px;
-  width: 475px;
-  height: 52px;
-  box-sizing: border-box;
-  border: none;
-  background-color: #f2f2f2;
-  border-radius: 4px 0 0 4px;
 }
 
 .brown-button {
@@ -126,17 +111,6 @@ body {
 
 .green-button {
   background-color: #7DB54F;
-}
-
-.hotel-rating {
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 4px;
-  padding: 9px 22px 8px 23px;
-  background-color: #F2F2F2;
-  color: #000000;
 }
 
 .filter-buttons {
@@ -152,12 +126,19 @@ body {
 }
 
 .sort-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   border-radius: 4px;
   border: solid 2px #E5E5E5;
   box-sizing: border-box;
   ;
+}
+
+.sort-button-current {
+  border: solid 2px #000000;
 }
 
 .card-button {
@@ -168,6 +149,114 @@ body {
 .card-button-about {
   padding: 8px 26px;
   box-sizing: border-box;
+}
+
+.navigation-link {
+  position: relative;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  display: block;
+  margin: 0;
+  padding: 20px 16px;
+}
+
+.navigation-link,
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navigation-logo {
+  margin-right: 28px;
+}
+
+.navigation-link-current {
+
+}
+
+.navigation-button {
+  font-size: 16px;
+  line-height: 20px;
+  width: 160px;
+  height: 36px;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  padding: 8px 34px;
+  color: #ffffff;
+  background-color: #756157;
+  text-transform: uppercase;
+  margin-top: 14px;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 460px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+  justify-content: end;
+}
+
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.navigation-link-favorite,
+.navigation-link-search {
+  padding: 22px 12px;
+}
+
+.navigation-item-favorite {
+  margin-right: 20px;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #dbdbdb;
+}
+
+.input-field {
+  font-size: 18px;
+  padding-left: 20px;
+  width: 452px;
+  height: 52px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+}
+
+.hotel-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 9px 22px 8px 23px;
+  background-color: #F2F2F2;
+  color: #000000;
 }
 
 .catalog-header-title {
@@ -197,54 +286,6 @@ body {
   color: #ffffff;
 }
 
-.navigation-link,
-.catalog-filter-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.navigation-button {
-  font-size: 16px;
-  line-height: 20px;
-  width: 160px;
-  height: 36px;
-  border-radius: 4px;
-  border: none;
-  box-sizing: border-box;
-  padding: 8px 34px;
-  color: #ffffff;
-  background-color: #756157;
-  text-transform: uppercase;
-  margin-top: 14px;
-}
-
-
-.navigation {
-  display: flex;
-  width: 1060px;
-  margin: 0 auto;
-}
-
-.navigation-list {
-  width: 460px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation-user {
-  max-width: 300px;
-  margin-left: auto;
-}
-
-.navigation-user .navigation-link {
-  min-width: 20px;
-  min-height: 20px;
-}
 
 .text {
   font-size: 22px;
@@ -255,7 +296,7 @@ body {
 
 .searching {
   padding-top: 96px;
-  padding-bottom: 96px;
+  padding-bottom: 104px;
 }
 
 .search-title {
@@ -266,7 +307,7 @@ body {
 .search-text {
   width: 600px;
   margin: 0 auto;
-  padding-bottom: 54px;
+  padding-bottom: 61px;
   box-sizing: border-box;
 }
 
@@ -371,16 +412,20 @@ body {
 
 .advantages-card {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 85px;
+  padding: 92px 85px 111px;
   box-sizing: border-box;
 }
 
 .advantages-icon {
   padding-top: 80px;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
+}
+
+.advantages-icon-souvenir {
+  padding-top: 78px;
+  padding-bottom: 24px;
 }
 
 .advantages-description {
@@ -420,16 +465,27 @@ body {
   background-color: #ffffff;
 }
 
-.sorting-container .button {
-  width: 56px;
-  height: 44px;
-  background-color: #ffffff;
+.sorting-container {
+  margin-left: auto;
 }
 
 .select-control {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  align-self: center;
+  line-break: auto;
   width: 292px;
   height: 49px;
   border-radius: 4px;
+  padding: 14px 20px;
+  appearance: none;
+  background-image: url("../icons/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center right 20px;
 }
 
 .sort-modes {
@@ -437,7 +493,7 @@ body {
   gap: 8px;
   flex-wrap: wrap;
   width: 160px;
-  margin: 0;
+  margin: 0 0 0 70px;
   padding: 0;
 }
 
@@ -540,7 +596,6 @@ body {
   line-height: 24px;
   padding: 12px 20px;
   border: none;
-  text-align: end;
 }
 
 .value-from {
@@ -611,8 +666,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 47px;
+  padding-bottom: 35px;
 }
 
 .footer-contacts-phone {
@@ -638,4 +693,17 @@ body {
   height: 40px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.social-media-logo-vk {
+  padding: 13px 12px;
+}
+
+.social-media-logo-telegram {
+  padding: 12px 15px;
+}
+
+.social-media-logo-youtube {
+  padding: 12px 13px;
 }
