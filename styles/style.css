@@ -677,8 +677,16 @@ body {
   width: 19px;
   height: 9px;
   top: -8px;
-  left: 47%;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
   background-image: url(../icons/modal-container/triangle.svg);
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .catalog-header-container {
