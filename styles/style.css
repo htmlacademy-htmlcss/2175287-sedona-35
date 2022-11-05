@@ -602,11 +602,17 @@ body {
   padding-left: 4px;
 }
 
+.modal-field-icon {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+}
+
 .modal-field {
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  padding: 12px 20px;
+  padding: 13px 20px;
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
@@ -657,18 +663,29 @@ outline: 2px solid #000000;
   display: flex;
   width: 110px;
   justify-content: space-between;
-  background-color: #F2F2F2;
   align-items: center;
+  border-radius: 4px;
+  background-color: #f2f2f2;
 }
 
 .range-button {
   width: 40px;
   border: none;
   padding: 14px 10px;
+  line-height: 0;
 }
 
 .range-button-minus {
   border-radius: 4px 0 0 4px;
+}
+
+.range-button-plus {
+  border-radius: 0 4px 4px 0;
+}
+
+.count-people {
+  font-weight: 700;
+  padding: 12px 10px;
 }
 
 .tooltip {
