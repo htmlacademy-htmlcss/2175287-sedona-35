@@ -99,7 +99,7 @@ body {
 .filter-button {
   width: 191px;
   height: 36px;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .brown-button {
@@ -442,7 +442,7 @@ body {
 .search-text {
   width: 600px;
   margin: 0 auto;
-  padding-bottom: 61px;
+  padding-bottom: 63px;
   box-sizing: border-box;
 }
 
@@ -485,8 +485,8 @@ body {
 .slogan {
   width: 660px;
   margin: auto;
-  padding-top: 70px;
-  padding-bottom: 90px;
+  padding-top: 67px;
+  padding-bottom: 91px;
 }
 
 .advantages-title {
@@ -806,7 +806,7 @@ outline: 2px solid #000000;
 .filter-content {
   width: 1060px;
   margin: 0 auto;
-  padding: 35px 0 69px 0;
+  padding: 35px 0 70px 0;
 }
 
 .advantages-item {
@@ -1069,7 +1069,7 @@ outline: 2px solid #000000;
 }
 
 .subscribe {
-  padding-top: 96px;
+  padding-top: 95px;
   padding-bottom: 104px;
 }
 .subscribe-index {
@@ -1086,7 +1086,7 @@ outline: 2px solid #000000;
 .subscribe-text {
   width: 475px;
   margin: auto;
-  padding-bottom: 54px;
+  padding-bottom: 56px;
 }
 
 .subscribe-mail {
@@ -1106,7 +1106,7 @@ outline: 2px solid #000000;
 
 .catalog-filter-title {
   margin: 0;
-  padding: 0 0 32px 0;
+  padding: 0 0 33px 0;
 }
 
 .catalog-filter-list {
@@ -1125,9 +1125,11 @@ outline: 2px solid #000000;
 .catalog-filter-value {
   width: 103px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 23px;
   padding: 12px 20px;
   border: none;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
 }
 
 .catalog-filter-value::-webkit-outer-spin-button,
@@ -1161,9 +1163,8 @@ outline: 2px solid #000000;
   font-family: 'PT sans', sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
-  background-color: #ffffff;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 20px;
 }
 
 .range-wrapper-inputs {
@@ -1214,12 +1215,12 @@ box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .toggle-min {
-  top: -8px;
+  top: -9px;
   left: -10px;
 }
 
 .toggle-max {
-  top: -8px;
+  top: -9px;
   right: -10px;
 }
 
@@ -1232,7 +1233,7 @@ box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 .catalog-hotels {
   width: 1060px;
   margin: 0 auto;
-  padding-bottom: 80px;
+  padding-bottom: 79px;
 }
 
 .pagination {
@@ -1301,7 +1302,7 @@ box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding-top: 47px;
+  padding-top: 46px;
   padding-bottom: 35px;
 }
 
@@ -1338,6 +1339,7 @@ box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 0;
 }
 
 .social-media-svg {
