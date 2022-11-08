@@ -773,6 +773,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0 0 40px 0;
 }
@@ -1029,7 +1030,7 @@ body {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  width: 160px;
+  max-width: 160px;
   margin: 0 0 0 70px;
   padding: 0;
 }
@@ -1273,6 +1274,7 @@ body {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #ffffff;
   margin: 0 auto;
@@ -1356,7 +1358,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 160px;
-  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
