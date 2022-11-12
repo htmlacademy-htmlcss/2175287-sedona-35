@@ -27,7 +27,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-width: 1280px;
+  min-width: 1200px;
   min-height: 100%;
   background-color: #f2f2f2;
   color: #000000;
@@ -357,9 +357,7 @@ body {
 }
 
 .input-field:hover,
-.input-field:focus,
-.catalog-filter-value:hover,
-.catalog-filter-value:focus {
+.input-field:focus {
   background-color: #cccccc;
 }
 
@@ -381,6 +379,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  max-width: 100%;
   text-transform: uppercase;
   border-radius: 4px;
   padding: 9px 22px 8px 23px;
@@ -500,6 +499,7 @@ body {
 
 .advantages-description-more {
   padding-bottom: 81px;
+  color: #333333;
 }
 
 .advantages-list {
@@ -675,6 +675,9 @@ body {
   padding: 14px 10px;
   line-height: 0;
   background-color: transparent;
+  cursor: pointer;
+  fill:rgba(0, 0, 0, 0.3);
+
 }
 
 .range-button-minus {
@@ -685,9 +688,34 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.count-people {
+.range-button-minus:hover,
+.range-button-plus:hover {
+  background-color: #e6e6e6;
+  fill: #000000;
+}
+
+.range-button-minus:focus,
+.range-button-plus:focus {
+  background-color: #e6e6e6;
+  outline: 1px solid #83b3d3;
+}
+
+.range-button-minus:active,
+.range-button-plus:active {
+  background-color: #f2f2f2;
+  outline: 1px solid #000000;
+}
+
+.count-input {
+  border: none;
+  padding: 14px 8px;
+  width: 11px;
+  font-family: "PT sans", sans-serif;
   font-weight: 700;
-  padding: 12px 10px;
+  line-height: 20px;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  color: #000000;
 }
 
 .tooltip {
@@ -897,6 +925,7 @@ body {
 
 .advantages-description-light {
   padding-bottom: 121px;
+  color: #333333;
 }
 
 .advantages-item-lightblue {
@@ -937,7 +966,7 @@ body {
   opacity: 0.3;
 }
 
-.control:focus .control-mark {
+.control-mark:focus {
   outline: 3px solid #83b3d3;
 }
 
@@ -1084,6 +1113,7 @@ body {
 
 .rating-star {
   background-image: url("../images/catalog/stars-rate.jpg");
+  background-repeat: no-repeat;
 }
 
 .three-stars {
@@ -1159,6 +1189,8 @@ body {
   border: none;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
+  background-color: #f2f2f2;
+  appearance: textfield;
 }
 
 .catalog-filter-value::-webkit-outer-spin-button,
@@ -1168,10 +1200,17 @@ body {
   margin: 0;
 }
 
+.catalog-filter-value:hover {
+  background-color: #e6e6e6;
+}
+
+.catalog-filter-value:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
 .catalog-filter-value:active {
-  border: 2px solid #68a2ca;
-  border-radius: 4px 0 0 4px;
-  padding: 10px 18px;
+  outline: 2px solid #000000;
 }
 
 .value-from {
