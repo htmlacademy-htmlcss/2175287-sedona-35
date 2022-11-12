@@ -145,7 +145,7 @@ body {
 
 .transparent-button {
   width: 191px;
-  height: 36px;
+  padding: 8px 57px;
   background-color: transparent;
 }
 
@@ -690,20 +690,17 @@ body {
 
 .range-button-minus:hover,
 .range-button-plus:hover {
-  background-color: #e6e6e6;
   fill: #000000;
 }
 
-.range-button-minus:focus,
-.range-button-plus:focus {
-  background-color: #e6e6e6;
-  outline: 1px solid #83b3d3;
+.range-icon:focus {
+  outline: 2px solid #83b3d3;
+  border-radius: 4px;
 }
 
 .range-button-minus:active,
 .range-button-plus:active {
-  background-color: #f2f2f2;
-  outline: 1px solid #000000;
+  fill:rgba(0, 0, 0, 0.3);
 }
 
 .count-input {
@@ -855,7 +852,7 @@ body {
 .filter-content {
   width: 1060px;
   margin: 0 auto;
-  padding: 35px 0 70px 0;
+  padding: 35px 0 71px 0;
 }
 
 .advantages-item {
@@ -1232,7 +1229,7 @@ body {
   font-family: "PT sans", sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
-  top: 10px;
+  top: 11px;
   right: 20px;
 }
 
@@ -1240,7 +1237,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 2px;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 }
 
 .range-scale {
